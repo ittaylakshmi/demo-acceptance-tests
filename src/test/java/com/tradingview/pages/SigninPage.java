@@ -33,6 +33,10 @@ public class SigninPage extends CommonActions {
 
 	@FindBy(xpath = "//button[@type='submit']")
 	public WebElement signInSubmitbtn;
+	
+	@FindBy(xpath = "//span[@class='tv-button__loader']")
+	public WebElement tvLoader;
+
 
 	public void clickHumanIcon() {
 		waitForWebElement(humanIcon, 30);
@@ -61,7 +65,7 @@ public class SigninPage extends CommonActions {
 		inputText(userName, usr);
 		inputText(passWord, pwd);
 		clickSignInButton();
-		waitForPageToLoad(2);
+		//waitTillTvLoaderDisappear(tvLoader);
 	}
 
 }

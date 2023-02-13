@@ -45,7 +45,6 @@ public class TradingViewBase {
 	
 	public void getUrl() {
 		driver.get(configReader.getUrl());
-		wait.until(ExpectedConditions.titleContains("Forex Rates — All Currency Pairs — TradingView"));
 	}
 
 	public void closeBrowser() {

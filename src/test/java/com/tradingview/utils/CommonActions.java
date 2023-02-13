@@ -31,7 +31,16 @@ public class CommonActions {
 
 	public boolean waitTillSpinnerDisappear(WebElement e) {
 		resetImplicitWait();
-		new FluentWait<>(e).withTimeout(Duration.ofSeconds(20)).pollingEvery(Duration.ofMillis(100))
+		new FluentWait<>(e).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofMillis(100))
+				.ignoring(NoSuchElementException.class).ignoring(StaleElementReferenceException.class)
+				.ignoring(ElementClickInterceptedException.class)
+				.until((Function<WebElement, Boolean>) element -> !element.isDisplayed());
+		return true;
+	}
+	
+	public boolean waitTillTvLoaderDisappear(WebElement e) {
+		resetImplicitWait();
+		new FluentWait<>(e).withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofMillis(100))
 				.ignoring(NoSuchElementException.class).ignoring(StaleElementReferenceException.class)
 				.ignoring(ElementClickInterceptedException.class)
 				.until((Function<WebElement, Boolean>) element -> !element.isDisplayed());

@@ -24,16 +24,14 @@ public class RatesAllPageStepDefinitions extends TradingViewBase {
 	}
 
 	@When("I navigate to {string} currency rates page")
-	public void clickAsiaTab(String country) {
+	public void navigateToCurrencyRates(String country) {
 		System.out.println("entered clickAsiaTab method...");
 		searchPage.clickRatesCountry(country);
 	}
 
 	@When("I search for currency {string}")
 	public void searchCurrency(String searchterm) {
-		System.out.println("search item is " + searchterm);
 		searchPage.performSearch(searchterm);
-		// searchPage.clickSeeOverView();
 	}
 
 	@When("I see the overview")
