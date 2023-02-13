@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-13T18:12:26 GMT" name="Suite" finished-at="2023-02-13T18:13:19 GMT" duration-ms="53155">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.tradingview.runner.TradingViewRunner@3349e9bb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-02-13T18:12:26 GMT" name="Test" finished-at="2023-02-13T18:13:19 GMT" duration-ms="53155">
+      <class name="com.tradingview.runner.TradingViewRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.tradingview.runner.TradingViewRunner@3349e9bb]" started-at="2023-02-13T18:12:26 GMT" name="setUpClass" finished-at="2023-02-13T18:12:28 GMT" duration-ms="1629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b31af02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.tradingview.runner.TradingViewRunner@3349e9bb]" started-at="2023-02-13T18:12:28 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T18:13:17 GMT" duration-ms="49464" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate search functionality of Trading View Application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user of trading view application I should be able to perform search"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Validate currency Irelandis loaded correctly expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Validate currency Irelandis loaded correctly expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.tradingview.stepdefinitions.CurrencyOverviewPageStepDefinitions.verifyCurrencyPage(CurrencyOverviewPageStepDefinitions.java:30)
+at ✽.I verify currency as "Ireland" in rates page(file:///C:/Users/laksh/Desktop/Sample/demo-acceptance-tests/src/test/resources/features/search.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.tradingview.runner.TradingViewRunner@3349e9bb]" started-at="2023-02-13T18:13:17 GMT" name="tearDownClass" finished-at="2023-02-13T18:13:19 GMT" duration-ms="1939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.tradingview.runner.TradingViewRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

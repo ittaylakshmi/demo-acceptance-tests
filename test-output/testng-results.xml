@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-13T16:59:12 GMT" name="Default suite" finished-at="2023-02-13T17:00:29 GMT" duration-ms="77361">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.tradingview.runner.TradingViewRunner@48075da3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-02-13T16:59:12 GMT" name="Default test" finished-at="2023-02-13T17:00:29 GMT" duration-ms="77361">
+      <class name="com.tradingview.runner.TradingViewRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.tradingview.runner.TradingViewRunner@48075da3]" started-at="2023-02-13T16:59:12 GMT" name="setUpClass" finished-at="2023-02-13T16:59:14 GMT" duration-ms="1553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1377b1a0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.tradingview.runner.TradingViewRunner@48075da3]" started-at="2023-02-13T16:59:14 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-13T17:00:28 GMT" duration-ms="74213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate search functionality of Trading View Application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["As a user of trading view application I should be able to perform search"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.tradingview.runner.TradingViewRunner@48075da3]" started-at="2023-02-13T17:00:28 GMT" name="tearDownClass" finished-at="2023-02-13T17:00:29 GMT" duration-ms="1472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.tradingview.runner.TradingViewRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
